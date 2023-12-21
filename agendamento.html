@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Agenda de Nivelamento</title>
+    <meta name="author" content="João Paulo Machado">
+    <meta name="description" content="Desenvolvimento Front end em formulários">
+    <meta name="keywords" content="Formulários, HTML semântico e CSS">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-conteiner_three">
+            <img src="imagens/test.svg" alt="imagem ilustrativa de aplicação de avaliação">
+        </div>
+        <div class="wrapper-conteiner_four">
+            <form class="wrapper-form" action="#">
+                <span class="legend-form_title">consultoria</span>
+                <fieldset>
+                    <legend class="legend-form">Agendamento</legend>
+                    <textarea cols="50" rows="11" disabled>
+TERMO DE COMPROMISSO
+
+Agendar nossa reunião com antecedência é uma forma de valorizar o seu tempo e o dos nossos profissionais, além de contribuir para a organização e a segurança da nossa qualidade. Agradecemos a sua colaboração e esperamos vê-lo em breve.
+
+Assinale com "sim" ou "não" o seu comprometimento com o agendamento da reunião.            
+</textarea>
+                    <div class="conteiner-termo">
+                        <span class="text--info">Você concorda com o TERMO?</span>
+                        <label><span class="text--info">SIM</span>
+                            <input type="radio" name="compromise" value="yes" required>
+                        </label>
+                        <label>
+                            <span class="text--info">NÃO</span>
+                            <input type="radio" name="compromise" value="no">
+                        </label>
+                    </div>
+
+                    <div class="conteiner-agend">
+                        <div class="container--input_agend">
+                        <div class="testinho1">
+                                <label><span class="back-calendertext">Consulte uma data</span>
+                                    <input class="testinho3" type="date" name="data-agendamento" min="2024-01-08"
+                                        max="2024-01-31" required>
+                                </label>
+                            </div>
+                            <div class="testinho1">
+                            <label><span class="back-calendertext" >Consulte um horário</span>
+                                <input class="testinho3" type="time" name="hora-agendamento" min="16:00" max="20:00" step="3600" required>
+                                </label>
+                            </div>
+    
+                            </div>
+                        <div class="calender">
+                            <details>
+                                <summary class="back-calendertext">Mais informações sobre a disponibilidade das datas
+                                </summary>
+                                <div class="wrapper-calender">
+                                    <table>
+                                        <thead class="calender-info_date">
+                                            <tr>
+                                                <th colspan="5">Janeiro</th>
+                                                <th colspan="2">2024</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="calender-info_text calender-info_red">domingo</td>
+                                                <td class="calender-info_text">segunda</td>
+                                                <td class="calender-info_text">terça</td>
+                                                <td class="calender-info_text">quarta</td>
+                                                <td class="calender-info_text">quinta</td>
+                                                <td class="calender-info_text">sexta</td>
+                                                <td class="calender-info_text">sabado</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mespast">31</td>
+                                                <td class="calender-info_red">1</td>
+                                                <td class="agendclose">2</td>
+                                                <td class="agendclose">3</td>
+                                                <td class="agendclose">4</td>
+                                                <td class="agendclose">5</td>
+                                                <td class="agendclose">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calender-info_red">7</td>
+                                                <td class="agendopen">8</td>
+                                                <td class="agendopen">9</td>
+                                                <td class="agendopen">10</td>
+                                                <td class="agendopen">11</td>
+                                                <td class="agendopen">12</td>
+                                                <td class="agendopen">13</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calender-info_red">14</td>
+                                                <td class="agendopen">15</td>
+                                                <td class="agendopen">16</td>
+                                                <td class="agendopen">17</td>
+                                                <td class="agendopen">18</td>
+                                                <td class="agendopen">19</td>
+                                                <td class="agendopen">20</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calender-info_red">21</td>
+                                                <td class="agendopen">22</td>
+                                                <td class="agendopen">23</td>
+                                                <td class="agendopen">24</td>
+                                                <td class="agendopen">25</td>
+                                                <td class="agendopen">26</td>
+                                                <td class="agendopen">27</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calender-info_red">28</td>
+                                                <td class="agendopen">29</td>
+                                                <td class="agendopen">30</td>
+                                                <td class="agendopen">31</td>
+                                                <td class="mespast">1</td>
+                                                <td class="mespast">2</td>
+                                                <td class="mespast">3</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <small class="back-calendertext">Não há agendamentos aos domingos e feriados
+                                        nacionais.</small>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="conteiner-bottom_agend">
+                        <small class="bottomtext-agend">Os horários dos testes são das 16h às 20h.</small>
+                    </div>               
+                    <input class="send" type="submit" value="Agendar">
+                </fieldset>
+            </form>
+            <a class="btn-2_agend" href="/index.html">
+                <p>Voltar</p>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

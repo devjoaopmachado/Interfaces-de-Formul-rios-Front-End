@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Projeto Formulário</title>
+    <meta name="author" content="João Paulo Machado">
+    <meta name="description" content="Desenvolvimento Front end em formulários">
+    <meta name="keywords" content="Formulários, HTML semântico e CSS">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper-conteiner_logo">
+            <img src="imagens/word.svg" alt="logo-conequit">
+            <H1 class="logo-conteiner">conequit</H1>
+        </div>
+        <form class="wrapper-form" action="#">
+            <!-- Method para segurança precisa ser post-->
+            <fieldset>
+                <legend class="legend-form">Login</legend>
+                <div class="conteiner-info">
+                    <label><span class="info-conteiner_text">usuário</span>
+                        <input class="inp-conteiner_info" type="text" name="user-name" required>
+                    </label>
+                    <label><span class="info-conteiner_text">senha</span>
+                        <input class="inp-conteiner_info" type="password" name="senha" required>
+                    </label>
+                    <a href="#">
+                        <p class="text_inf-senha">Esqueci minha senha</p>
+                    </a>
+                    <div class="mini-conteiner-login">
+                        <ul class="conteiner-log_option">
+                            <li class="line-log_option">
+                                <a class="itemimg-log_option" href="https://pt-br.facebook.com/"><img
+                                        src="imagens/facebook.svg" alt="logo facebook"></a>
+                                <a class="itemtext-log_option" href="https://pt-br.facebook.com/">
+                                    <p>Entrar com a sua conta do Facebook</p>
+                                </a>
+                            </li>
+                            <li class="line-log_option">
+                                <a class="itemimg-log_option"
+                                    href="https://accounts.google.com/InteractiveLogin/identifier?continue=https%3A%2F%2Fwww.google.com.br%2F&ec=GAZAmgQ&hl=pt-BR&passive=true&ifkv=ASKXGp1ju_rEZVBhO42EyiSB6z2DlJYQopDi45N4Oi54KBNmtfrh2BaX3Sy8vhW2bgWU7pqwa6kYxQ&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img
+                                        src="imagens/google.svg" alt="logo google"></a>
+                                <a class="itemtext-log_option"
+                                    href="https://accounts.google.com/InteractiveLogin/identifier?continue=https%3A%2F%2Fwww.google.com.br%2F&ec=GAZAmgQ&hl=pt-BR&passive=true&ifkv=ASKXGp1ju_rEZVBhO42EyiSB6z2DlJYQopDi45N4Oi54KBNmtfrh2BaX3Sy8vhW2bgWU7pqwa6kYxQ&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                                    <p>Entrar com a sua conta do Google</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="text_inf-senha">Faça login ou registre-se em segundos</p>
+                        <a class="btn3" href="/cadastro.html" target="_blank">registre-se</a>
+                    </div>
+                </div>
+            </fieldset>
+            <input class="send" type="submit" value="LOGIN">
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

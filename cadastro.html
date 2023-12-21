@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Cadastre-se</title>
+    <meta name="author" content="João Paulo Machado">
+    <meta name="description" content="Desenvolvimento Front end em formulários">
+    <meta name="keywords" content="Formulários, HTML semântico e CSS">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+       <div class="wrapper-conteiner_one">
+            <img src="imagens/contact.svg" alt="Imagem ilustrativa de inserção de dados">
+        </div>
+        <div>
+            <form class="wrapper-form" action="#">
+                <span class="legend-form_title">Newsletter</span>
+                <fieldset>                    
+                    <legend class="legend-form">Cadastre-se</legend>
+                    <div class="conteiner-info">
+                        <div class="conteiner-name">
+                        <label><span class="info-conteiner_text">seu nome</span>
+                                    <input class="inp-conteiner_info" type="text" name="firstname" required
+                                        placeholder="digite seu nome">
+                                          </label>
+                                          <label><span class="info-conteiner_text">seu sobrenome</span>
+                                    <input class="inp-conteiner_info" type="text" name="lastname" required
+                                        placeholder="digite seu sobrenome">
+                                    </label>
+                                </div>
+                      
+
+                        <label><span class="info-conteiner_text">seu melhor e-mail</span>
+                            <input class="inp-conteiner_info" type="email" name="email" required
+                                placeholder="exemplo@exemplo.com">
+
+                        </label>
+                        <div>
+                            <label><span class="info-conteiner_text">seu contato</span>
+                                <input class="inp-conteiner_info" type="tel" name="phone" required placeholder="(xxx) x xxxx xxxx"
+                                    maxlength="15">
+                            </label>
+                        </div>
+                        <div class="mini-conteiner-info">
+                         
+                            <legend><span class="mini-ind_inp">Eu concordo em receber o contato da através de:</span>
+                            </legend>
+                  
+                            <div class="aling-ind_inp">
+                                <div>
+                                <label>
+                                    <input type="radio" name="contact" value="Whatsapp" required><span
+                                        class="mini-ind_inp">Whatsapp</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="radio" name="contact" value="Telefone"><span
+                                        class="mini-ind_inp">Telefone</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="radio" name="contact" value="E-mail"><span
+                                        class="mini-ind_inp">E-mail</span>
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <input class="send" type="submit">
+            </form>                
+                <div class="content-btn">                
+                    <a class="btn" href="/agendamento.html" target="_blank">
+                        <p>Agende um teste</p>
+                    </a>                    
+                    <a class="btn-2" href="/index.html">
+                        <p>Voltar</p>                 
+                    </a>
+                </div>         
+        </div>
+    </div>
+ 
+</body>
+
+</html>
